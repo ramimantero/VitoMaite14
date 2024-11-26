@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VitoMaite - Encuentra tu cita</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+
+
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="indexLogueado.html">
+                    <img src="img/logo.png" alt="Logo" style="width: 30px; height: 30px;">
+                    VitoMaite
+                </a>
+                <div id="bienvenida" class="d-flex align-items-center ml-3 text-white"></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-1" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/fondo_encabezado.png">
+            <div class="overlay">
+                <div class="text-center text-white">
+                    <h1>Encuentra tu pareja ideal</h1>
+                    <p>Selecciona tus preferencias y comienza a buscar</p>
+                </div>
+            </div>
+            <!-- Cartel de "scroll" debajo del recuadro -->
+            <div class="scroll-indicator text-center">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- Search Form -->
+        <div class="container tm-mt-60">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="tm-contact-form">
+                        <!-- Género -->
+                        <div class="form-group">
+                            <label for="gender" class="tm-text-primary">Soy:</label>
+                            <select id="gender" class="form-control rounded-0">
+                                <option value="hombre-busca-mujer">Soy hombre busco mujer</option>
+                                <option value="mujer-busca-hombre">Soy mujer busco hombre</option>
+                                <option value="hombre-busca-hombre">Soy hombre busco hombre</option>
+                                <option value="mujer-busca-mujer">Soy mujer busco mujer</option>
+                            </select>
+                        </div>
+
+                        <!-- Rango de edad -->
+                        <div class="range_container">
+                            <div class="sliders_control">
+                                <input id="fromSlider" type="range" value="18" min="18" max="100"/>
+                                <input id="toSlider" type="range" value="30" min="18" max="100"/>
+                            </div>
+                            <div class="form_control">
+                                <div class="form_control_container">
+                                    <div class="form_control_container__time">Min</div>
+                                    <input class="form_control_container_time_input" type="number" id="fromInput" value="18" min="18" max="100"/>
+                                </div>
+                                <div class="form_control_container">
+                                    <div class="form_control_container__time">Max</div>
+                                    <input class="form_control_container_time_input" type="number" id="toInput" value="30" min="18" max="100"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ciudad -->
+                        <div class="form-group">
+                            <label for="city" class="tm-text-primary">Ciudad:</label>
+                            <select id="city" class="form-control rounded-0">
+                                <option value="Vitoria">Vitoria</option>
+                                <option value="Donostia">Donostia</option>
+                                <option value="Bilbao">Bilbao</option>
+                            </select>
+                        </div>
+
+                        <!-- Botón de búsqueda -->
+                        <div class="form-group tm-text-right">
+                            <button id="buscarBtn" class="btn btn-primary">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+            <div class="container-fluid tm-container-small">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                        <h3 class="tm-text-primary mb-4 tm-footer-title"> VitoMaite</h3>
+                        <p>VitoMaite es una app de citas para conectar personas de todo el mundo.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                        <h3 class="tm-text-primary mb-4 tm-footer-title"> Links</h3>
+                        <ul class="tm-footer-links pl-0">
+                            <li><a href="#">Advertise</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                        <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                            <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                        <a href="#" class="tm-text-gray text-right d-block mb-2">Terminos de uso</a>
+                        <a href="#" class="tm-text-gray text-right d-block">Políticas</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/buscar.js"></script>
+
+    </body>
+
+</html>

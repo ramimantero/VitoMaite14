@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #FF5F6D, #FFC371); /* Degradado estilo Tinder */
+}
+
+/* Estilo del mapa */
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilo del botón de obtener ubicación */
+#getLocation {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF4081;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior para separarlo de la barra */
+}
+
+#getLocation:hover {
+    background-color: #D81B60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#getLocation:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* Estilo del enlace de volver al inicio */
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 24px;
+    background-color: #D81B60;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.back-link:hover {
+    background-color: #0097A7;
+    transform: translateY(-2px);
+}
+
+.back-link:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* Estilo de la barra de rango */
+#radius {
+    display: block;
+    margin: 40px auto; /* Centrar y espacio arriba/abajo */
+    width: 80%; /* Ajustar el ancho */
+    appearance: none; /* Ocultar estilo predeterminado */
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#radius:hover {
+    background: #ccc;
+}
+
+#radius::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FF4081;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#radius::-webkit-slider-thumb:hover {
+    background: #D81B60;
+}
+
+#radiusValue {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botón general */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

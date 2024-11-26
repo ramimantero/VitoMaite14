@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #FF5F6D, #FFC371); /* Degradado estilo Tinder */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85); /* Fondo blanco semi-transparente para la legibilidad */
+    background-image: url(''); /* Puedes agregar una imagen de fondo sutil si lo deseas */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff; /* Fondo blanco para los campos */
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF5F6D; /* Rosa estilo Tinder */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FF3D55; /* Tono más oscuro al pasar el mouse */
+}
+
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 24px;
+    background-color: #D81B60;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.back-link:hover {
+    background-color: #0097A7;
+    transform: translateY(-2px);
+}
+
+.back-link:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+#buscarDiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#edad {
+	padding: 0.5em;
+	border: .2em solid #E91E63;
+	border-radius: 1em;
+	text-align: center;
+	color: #E91E63;
+	appearance: textfield;
+	margin: 0;
+	&::-webkit-inner-spin-button {
+		opacity: 1;
+		background: red;
+	}
+}
+
+#username, #phone{
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #E91E63;
+	background: rgba(#E91E63, .2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #E91E63;
+}
+div.radio {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: .2em;
+	margin-left: -2em;
+}
+input[type=radio] {
+	appearance: none;
+  background-color: #fff;
+  margin: 0;
+	font: inherit;
+  color: #E91E63;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+	display: grid;
+  place-content: center;
+	&::before {
+		content: "";
+		width: 0.65em;
+		height: 0.65em;
+		border-radius: 50%;
+		transform: scale(0);
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 1em 1em #E91E63;
+		background-color: CanvasText;
+		transform-origin: top bottom;
+	}
+	&:checked::before {
+		transform: scale(1);
+	}
+}
+/* Lista de imágenes */
+.drag-images img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    cursor: grab;
+    transition: transform 0.2s;
+}
+
+/* Imagen dentro del recuadro */
+.drop-zone img {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Centrar la drop zone horizontalmente */
+.container-drop-zone {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Opcional: centra verticalmente */
+    margin-top: 20px;       /* Ajusta el espacio superior si es necesario */
+}
+
+/* Drop zone */
+.drop-zone {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para resaltar */
+}
+

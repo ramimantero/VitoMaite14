@@ -1,0 +1,215 @@
+
+/* Contenedor principal del formulario */
+.container {
+    background: rgba(255, 255, 255, 0.85); /* Fondo blanco semi-transparente para la legibilidad */
+    background-image: url(''); /* Puedes agregar una imagen de fondo sutil si lo deseas */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 700px;
+    width: 100%;
+    margin-top: 10px !important;
+}
+
+/* Títulos y etiquetas */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para las etiquetas de los inputs */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos para inputs y selects */
+input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff; /* Fondo blanco para los campos */
+    color: #333;
+}
+
+/* Botón de búsqueda */
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: #FF5F6D; /* Rosa estilo Tinder */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilo al pasar el mouse sobre el botón */
+button:hover {
+    background-color: #FF3D55; /* Tono más oscuro al pasar el mouse */
+}
+
+/* Estilo de los enlaces de retroceso */
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 24px;
+    background-color: #D81B60;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.back-link:hover {
+    background-color: #0097A7;
+    transform: translateY(-2px);
+}
+
+.back-link:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* Estilo de los controles de los sliders */
+.range_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sliders_control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.form_control_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_control_container__time {
+    font-weight: bold;
+    color: #FF5F6D;
+    margin-bottom: 5px;
+}
+
+.form_control_container_time_input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para la selección de género y ciudad */
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Div contenedor del botón de búsqueda */
+.form-group.tm-text-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilos del slider para la edad */
+#fromSlider, #toSlider {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Diseño de radio buttons en una cuadrícula */
+div.radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.2em;
+    margin-left: -2em;
+}
+.tm-hero {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-center {
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el cartel de "scroll" debajo */
+.scroll-indicator {
+    position: absolute;
+    bottom: 35px; /* Se coloca al final de la pantalla */
+    left: 50%;
+    transform: translateX(-50%); /* Centrado horizontal */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.scroll-indicator i {
+    font-size: 30px; /* Tamaño del icono */
+    animation: bounce 1.5s infinite; /* Animación para hacer el ícono rebotar */
+}
+
+/* Animación para el icono */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

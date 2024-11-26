@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resultados de Búsqueda</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/buscar.css">
+    </head>
+    <body>
+        <a href="indexLogueado.html" id="back-link" class="back-link">Volver al inicio</a>
+
+    <!-- Resultados de Búsqueda -->
+    <div class="container tm-container-content tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="col-12 tm-text-primary">Resultados</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="resultados">
+                    <!-- La tabla dinámica generada por JavaScript se insertará aquí -->
+                </div>
+            </div>
+        </div>
+        <div id="map" style="width: 100%; height: 400px; margin-top: 20px; display:none"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiFjzQWjhYdrvmNwCuioXmEyuxKBBWh4k"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/buscar.js"></script>
+    </body>
+</html>

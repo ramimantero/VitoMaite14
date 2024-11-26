@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/maps.css">
+        <title>Marcadores dentro de un radio</title>
+    </head>
+    <body>
+        <a href="indexLogueado.html" id="backLink" class="back-link">Volver al inicio</a>
+        <label for="radius">Ajustar radio: </label>
+        <input type="range" id="radius" min="100" max="10000" step="100" value="1000">
+        <span id="radiusValue">1000 metros</span>
+        <button id="getLocation">Obtener ubicación y mostrar/actualizar marcadores</button>
+        <div id="map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiFjzQWjhYdrvmNwCuioXmEyuxKBBWh4k"></script>
+        <script src="js/maps.js"></script>
+    </body>
+</html>
